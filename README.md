@@ -1,3 +1,8 @@
+> [!CAUTION]
+> ## This benchmark measures one thing only: how fast the **first image load** completes (cold network + decode time).
+> It does **not** measure lazy loading, resource contention, real page rendering, or any warm-cache scenario beyond Round 2+.
+> Use it to answer: *"Is `/_next/image` endpoint faster or slower than serving a static file directly on the first request?"*
+
 # Next/Image vs img Tag Benchmark
 
 Compares `next/image` and `<img>` across **speed, bandwidth, and layout stability** in a real Next.js environment.
